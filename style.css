@@ -5,13 +5,13 @@
 html{
     font-size:62.5%;
 }
-body{
-    background-color:aqua;
-}
+
 /* THE SIDEBAR STARTS HERE */
 .current{
     background:#463c37;
     padding:10px;
+    border-left: 4px solid seagreen;
+
 }
 .navigation{
     position:fixed;
@@ -33,11 +33,12 @@ ul :hover{
     background-color:#352d29;
     margin:10px;
     padding:10px;
+    border-left: 4px solid seagreen;
 }
 
 a > .logo{
     box-sizing: border-box;
-    padding:30px 40px 10px 30px;
+    padding:30px 40px 10px 40px;
 }
 .logo{
     width:100%;
@@ -50,7 +51,7 @@ a > .logo{
     color:white;
     text-decoration:none;
     padding: 0 25px;
-    /* gap:10px; */
+    
 }
 
 span  {
@@ -63,9 +64,12 @@ span  {
 h3{
     margin-bottom: 15px;
 }
+i{
+    stroke:white;
+}
 .sicons{
     font-size:2.5rem;
-    color:white;
+    stroke:whitesmoke;
 }
 .socials{
     align-items: center;
@@ -74,9 +78,52 @@ h3{
     color: white;
     
 }
+.sicons :hover{
+    color:#32b672;
+    cursor:pointer;
+    
+}
 /* THE SIDEBAR ENDS HERE */
 
 /* THE MAIN CONTENT STARTS HERE */
 .main{
-    margin-left: 300px;
+    z-index:1;
+    margin-left: 250px;
+    object-fit: cover;
+    
+
+    
+}
+.p-title{
+    height:43rem;
+    background-image: url(../Images/backgroundimage.jpg);
+    background-size: cover;
+    box-sizing: border-box;
+    align-items: center;
+    /* background: linear-gradient(to right, rgba(50, 70, 80, 0.7); */
+
+    
+}
+.title{
+    margin-left:auto;
+    font-family: "Bitter",serif;
+    color: #ffffff;
+    font-weight: 200;
+    font-size:3rem;
+    line-height:6.3rem;
+    width:100%;
+    transform: translate(30%,80%);
+    
+}
+.tips{
+    font-size:2rem;
+    font-family: "Bitter",serif;
+    color: rgb(255, 255, 255);
+    font-weight: 100;
+}
+span{
+    margin-left:50px;
+}
+.tw{
+    margin-left:70px;
 }
